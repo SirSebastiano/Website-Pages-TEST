@@ -5,15 +5,34 @@ html, body {
 }
 
 canvas {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  max-height: 80%;
+  max-width: 100%;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000 0%, #391A2F 100%);
 }
 
 li {
-  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #c9c7c7;
 }

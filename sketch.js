@@ -7,7 +7,7 @@ var food;
 
 function setup() {
     frameRate(10);
-    createCanvas(600,600);
+    createCanvas(windowWidth, windowHeight-50);
     s = new Snake();
     pickLocation();
 }
@@ -44,6 +44,9 @@ if (keyIsDown(UP_ARROW)) {
     };
     
 }
-
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight-50);
+  }
+  
 
 
